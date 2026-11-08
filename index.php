@@ -28,7 +28,6 @@
 
 <h2 style="text-align: center;">Tabella CSV</h2>
 <?php
-    <?php
     $nomeFile = "log - log.csv";
     $file = fopen($nomeFile, "r");
     if (!$file) {
