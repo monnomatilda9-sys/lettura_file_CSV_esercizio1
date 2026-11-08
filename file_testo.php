@@ -1,3 +1,32 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Visualizzazione CSV in Tabella</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 90%;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+<h2 style="text-align: center;">Tabella CSV</h2>
 <?php
     <?php
     $nomeFile = "log - log.csv";
@@ -37,3 +66,5 @@
     echo "</table>\n"; // Chiusura della tabella
     fclose($file);     // Chiusura del file
 ?>
+</body>
+</html>
